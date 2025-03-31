@@ -291,7 +291,14 @@ body {
         gap: 12px;
         background-color: none;
     }
-
+    .iland {
+        justify-content: space-around;
+        color: #fff;
+        font-size: 15px;
+    }
+    .header .b1header {
+        width: 70vw;
+    }
     .one1 {
         display: flex;
         /* background-color: aqua; */

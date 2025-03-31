@@ -93,6 +93,10 @@ body {
 .ccp2 {
     text-align: left;
 }
+.ccp2 p{
+    color: #000;
+}
+
 
 /* main content */
 .proo {
@@ -107,6 +111,27 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.pf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.pf button{
+    position: absolute; 
+    bottom: 0;
+    right: 0;
+    margin: 0px;
+}
+#contacttbtn{
+    border: none;
+    /* background-color: aqua; */
+    font-size: 15px;
+    padding: 0px 18px;
+    border-radius: 12px;
 }
 
 #a1 {
@@ -142,7 +167,7 @@ body {
 .one {
     padding: 10px;
     margin: 10px;
-    cursor: pointer;
+    /* cursor: pointer; */
     border-radius: 15px;
     height: 15vh;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
@@ -160,7 +185,7 @@ body {
     border-radius: 15px;
     background-color: rgb(248, 242, 235);
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .doing:hover {
@@ -178,7 +203,7 @@ body {
 .techicon {
     padding: 10px;
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .techicon:hover {
@@ -209,6 +234,24 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 12px;
+    /* background-color: #000; */
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+.section2 {
+    text-align: center;
+    width: 75vw;
+    display:none;
+    background-color: rgba(246, 231, 214, 0.552);
+    padding: 25px;
+    overflow: hidden;
+    transform: translateY(-10px); 
+    /* transition: transform 0.5s ease-out, opacity 0.5s ease-out; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    /* background-color: #000; */
+    position: relative;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -292,14 +335,17 @@ body {
         gap: 12px;
         background-color: none;
     }
+
     .iland {
         justify-content: space-around;
         color: #fff;
         font-size: 15px;
     }
+
     .header .b1header {
         width: 70vw;
     }
+
     .one1 {
         display: flex;
         /* background-color: aqua; */

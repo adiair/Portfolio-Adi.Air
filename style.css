@@ -575,6 +575,9 @@ a {
         gap: 12px;
         background-color: none;
     }
+    h1{
+        font-size: 25px;
+    }
 
     .iland {
         justify-content: space-around;

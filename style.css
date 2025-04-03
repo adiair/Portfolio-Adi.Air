@@ -12,12 +12,108 @@ html,
 body {
     height: 100%;
     margin: 0;
-    background-color: rgb(248, 242, 235);
+    background-color: rgb(3, 9, 31);
     display: flex;
     flex-direction: column;
 }
 
 /* header content */
+/* .pf .p2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+} */
+
+.animated-text span {
+    opacity: 0;
+    /* Hide letters initially */
+    transform: translateY(10px);
+    /* Move letters slightly down */
+    display: inline-block;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        /* transform: translateY(10px); */
+    }
+
+    to {
+        opacity: 1;
+        /* transform: translateY(0); */
+    }
+}
+
+/* Apply delays to each letter */
+.animated-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.animated-text span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.animated-text span:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.animated-text span:nth-child(4) {
+    animation-delay: 0.2s;
+}
+
+.animated-text span:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+.animated-text span:nth-child(6) {
+    animation-delay: 0.3s;
+}
+
+.animated-text span:nth-child(8) {
+    animation-delay: 0.35s;
+}
+
+.animated-text span:nth-child(9) {
+    animation-delay: 0.4s;
+}
+
+.animated-text span:nth-child(10) {
+    animation-delay: 0.45s;
+}
+
+.animated-text span:nth-child(11) {
+    animation-delay: 0.5s;
+}
+
+.animated-text span:nth-child(12) {
+    animation-delay: 0.55s;
+}
+
+.animated-text span:nth-child(13) {
+    animation-delay: 0.6s;
+}
+
+.animated-text span:nth-child(14) {
+    animation-delay: 0.65s;
+}
+
+.animated-text span:nth-child(15) {
+    animation-delay: 0.6s;
+}
+
+.animated-text span:nth-child(16) {
+    animation-delay: 0.7s;
+}
+
+.animated-text span:nth-child(17) {
+    animation-delay: 0.8s;
+}
+
+.animated-text span:nth-child(18) {
+    animation-delay: 0.9s;
+}
 
 .d1header {
 
@@ -92,9 +188,13 @@ body {
 
 .ccp2 {
     text-align: left;
+    color: #fff;
 }
-.ccp2 p{
-    color: #000;
+
+.ccp2 p {
+    color: #fff;
+
+
 }
 
 
@@ -113,20 +213,22 @@ body {
     flex-direction: column;
 }
 
-.pf{
+.pf {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
 }
-.pf button{
-    position: absolute; 
+
+.pf button {
+    position: absolute;
     bottom: 0;
     right: 0;
     margin: 0px;
 }
-#contacttbtn{
+
+#contacttbtn {
     border: none;
     /* background-color: aqua; */
     font-size: 15px;
@@ -148,12 +250,16 @@ body {
 .h1 {
     font-family: Montserrat;
     font-weight: 4000;
+    letter-spacing: -3px;
+    /* Decreases space between letters */
+
 }
 
 .box1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 #heading {
@@ -169,12 +275,12 @@ body {
     margin: 10px;
     /* cursor: pointer; */
     border-radius: 15px;
-    height: 15vh;
+    /* height: 15vh; */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     text-align: center;
     width: 25vw;
     box-shadow: none;
-    background-color: whitesmoke;
+    /* background-color: rgb(32, 31, 31); */
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
@@ -183,7 +289,7 @@ body {
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
-    background-color: rgb(248, 242, 235);
+    background-color: rgb(3, 9, 31);
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
     /* cursor: pointer; */
 }
@@ -193,7 +299,12 @@ body {
 }
 
 .p1 {
-    color: rgb(112, 110, 110);
+    color: rgb(0, 255, 47);
+}
+
+h2 {
+    color: rgb(0, 255, 47);
+
 }
 
 .box2 {
@@ -229,7 +340,8 @@ body {
 .section {
     text-align: center;
     width: 75vw;
-    background-color: whitesmoke;
+    color: aliceblue;
+    background-color: rgb(23, 28, 47);
     padding: 25px;
     justify-content: center;
     align-items: center;
@@ -238,14 +350,17 @@ body {
     position: relative;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
 }
+
 .section2 {
     text-align: center;
     width: 75vw;
-    display:none;
-    background-color: rgba(246, 231, 214, 0.552);
+    display: none;
+    background-color: rgb(3, 9, 31);
     padding: 25px;
+    color: #fff;
+
     overflow: hidden;
-    transform: translateY(-10px); 
+    transform: translateY(-10px);
     /* transition: transform 0.5s ease-out, opacity 0.5s ease-out; */
     justify-content: center;
     align-items: center;
@@ -286,7 +401,7 @@ body {
 .main {
     padding: 20px;
     flex: 1;
-    background-color: rgb(248, 242, 235);
+    /* background-color: rgb(32, 31, 31); */
     font-size: 15px;
     font-family: poppins;
 }
@@ -295,7 +410,7 @@ body {
 #edu2,
 #edu3 {
     padding: 5px;
-    background-color: whitesmoke;
+    background-color: rgb(32, 31, 31);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -327,6 +442,131 @@ body {
     gap: 12px;
     background-color: none;
 }
+
+
+#btnmain {
+    cursor: pointer;
+    padding: 50px;
+    margin: 10px;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    height: 180px;
+    border-radius: 12px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#btnmain:hover {
+    transform: scale(1.05);
+}
+
+.main .mainb1 {
+    background-color: rgba(203, 6, 6, 0.966);
+    /* color: aliceblue; */
+    font-size: 25px;
+    font-family: poppins;
+}
+
+.main .mainb2 {
+    background-color: rgb(8, 175, 92);
+    font-size: 25px;
+    font-family: poppins;
+}
+
+.main .mainb3 {
+    background-color: rgba(220, 35, 220, 0.774);
+    font-size: 25px;
+    font-family: poppins;
+}
+
+.main .mainb4 {
+    background-color: rgba(247, 185, 14, 0.842);
+    font-size: 25px;
+    font-family: poppins;
+}
+
+.main .mainb5 {
+    background-color: rgb(55, 183, 234);
+    font-size: 25px;
+    font-family: poppins;
+}
+
+.main .mainb6 {
+    background-color: rgba(247, 108, 132, 0.873);
+    font-size: 25px;
+    font-family: poppins;
+}
+
+.main .mainb7 {
+    background-color: rgb(115, 114, 114);
+    font-size: 25px;
+    font-family: poppins;
+}
+
+.main .mainb8 {
+    background-color: rgba(250, 128, 114, 0.886);
+    font-size: 25px;
+    font-family: poppins;
+}
+
+.main .mainb9 {
+    background-color: rgba(86, 22, 22, 0.767);
+    font-size: 25px;
+    font-family: poppins;
+}
+
+
+.f {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+.footer {
+    padding: 20px 20px 50px 20px;
+    font-family: poppins;
+    gap: 20px;
+    text-align: center;
+    /* background-color: rgb(32, 31, 31); */
+    color: #fff;
+}
+
+.footer .b1footer {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 5px 25px 5px 25px;
+    cursor: pointer;
+}
+
+.footer .b2footer {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 5px 25px 5px 25px;
+    cursor: pointer;
+}
+
+.footer .b3footer {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 5px 25px 5px 25px;
+    cursor: pointer;
+}
+
+.footer .p3footer {
+    text-decoration: none;
+    color: rgb(144, 139, 139);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ........................................................................................ */
+
 
 @media (max-width:600px) {
     .main .projectsbtn {
@@ -405,7 +645,12 @@ body {
         width: 60vw;
         padding: 10px;
     }
-
+    /* .pf .p2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 20px;
+    } */
     #about .hump {
         display: grid;
         justify-content: center;
@@ -416,122 +661,51 @@ body {
     }
 }
 
-#btnmain {
-    cursor: pointer;
-    padding: 50px;
-    margin: 10px;
-    border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-    height: 180px;
-    border-radius: 12px;
-    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+/* ...................................................................................... */
+
+/* Light Mode Styles */
+.light-mode {
+    background-color: rgb(248, 242, 235);
+    color: black;
 }
-
-#btnmain:hover {
-    transform: scale(1.05);
+/* Make other elements match light mode */
+.light-mode h1, 
+.light-mode p, 
+.light-mode .body,
+.light-mode .doing h4
+{
+    /* background-color: rgba(135, 78, 13, 0.9); */
+    color: black;
 }
-
-.main .mainb1 {
-    background-color: rgba(255, 0, 0, 0.659);
-    /* color: aliceblue; */
-    font-size: 25px;
-    font-family: poppins;
+.light-mode .section{
+    background-color: rgb(255, 255, 255);
 }
-
-.main .mainb2 {
-    background-color: rgba(5, 172, 88, 0.889);
-    font-size: 25px;
-    font-family: poppins;
-}
-
-.main .mainb3 {
-    background-color: rgba(187, 77, 187, 0.774);
-    font-size: 25px;
-    font-family: poppins;
-}
-
-.main .mainb4 {
-    background-color: rgba(227, 168, 7, 0.842);
-    font-size: 25px;
-    font-family: poppins;
-}
-
-.main .mainb5 {
-    background-color: skyblue;
-    font-size: 25px;
-    font-family: poppins;
-}
-
-.main .mainb6 {
-    background-color: rgba(247, 108, 132, 0.873);
-    font-size: 25px;
-    font-family: poppins;
-}
-
-.main .mainb7 {
-    background-color: rgb(115, 114, 114);
-    font-size: 25px;
-    font-family: poppins;
-}
-
-.main .mainb8 {
-    background-color: rgba(250, 128, 114, 0.886);
-    font-size: 25px;
-    font-family: poppins;
-}
-
-.main .mainb9 {
-    background-color: rgba(86, 22, 22, 0.767);
-    font-size: 25px;
-    font-family: poppins;
-}
-
-
-.f {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    position: relative;
-}
-
-
-.footer {
-    padding: 20px 20px 50px 20px;
-    font-family: poppins;
-    gap: 20px;
-    text-align: center;
+.light-mode .section2{
     background-color: rgb(248, 242, 235);
 }
-
-.footer .b1footer {
-    background-color: white;
-    border-radius: 8px;
-    border: 1px solid;
-    padding: 5px 25px 5px 25px;
-    cursor: pointer;
+.light-mode .doing{
+    background-color: rgb(248, 242, 235);
+}
+.light-mode .footer,
+.light-mode .main
+{
+    background-color: rgb(248, 242, 235);
+}
+.light-mode #black{
+    color: #000;
+}
+.light-mode #blue{
+    color: blue;
+}
+#theme-toggle{
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 5px 3px 8px rgba(0.1, 0.1, 0.1, 0.5);
+    background-color: rgb(255, 191, 72);
 }
 
-.footer .b2footer {
-    background-color: white;
-    border-radius: 8px;
-    border: 1px solid;
-    padding: 5px 25px 5px 25px;
-    cursor: pointer;
-}
-
-.footer .b3footer {
-    background-color: white;
-    border-radius: 8px;
-    border: 1px solid;
-    padding: 5px 25px 5px 25px;
-    cursor: pointer;
-}
-
-.footer .p3footer {
-    text-decoration: none;
-    color: rgb(144, 139, 139);
-}
-
-a {
-    text-decoration: none;
+#theme-toggle:hover{
+    background-color: rgb(229, 105, 22);
+    transform: scale(1.2);
 }

@@ -1,3 +1,5 @@
+
+
 const button = document.getElementById("theme-toggle");
 
         // Function to toggle theme
@@ -7,11 +9,11 @@ const button = document.getElementById("theme-toggle");
             // Save user preference in localStorage
             if (document.body.classList.contains("light-mode")) {
                 localStorage.setItem("theme", "light");
-                button.textContent = "";
+                // button.textContent = "";
                 
             } else {
                 localStorage.setItem("theme", "dark");
-                button.textContent = "";
+                // button.textContent = "";
             }
         }
 
@@ -19,9 +21,9 @@ const button = document.getElementById("theme-toggle");
         window.onload = () => {
             if (localStorage.getItem("theme") === "light") {
                 document.body.classList.add("light-mode");
-                button.textContent = "";
+                // button.textContent = "";
             } else {
-                button.textContent = "";
+                // button.textContent = "";
             }
         };
 

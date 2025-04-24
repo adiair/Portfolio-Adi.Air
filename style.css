@@ -12,7 +12,8 @@ html,
 body {
     height: 100%;
     margin: 0;
-    background-color: rgb(3, 9, 31);
+    scroll-behavior: smooth;
+    /* background-color: rgb(3, 9, 31); */
     display: flex;
     flex-direction: column;
 }
@@ -129,12 +130,12 @@ body {
     padding: 20px;
     height: 10px;
     z-index: 9999;
-    background: rgba(248, 242, 235, 0.9);
+    background: rgba(248, 242, 235,0.3);
     border: solid black;
     border-radius: 50px;
     font-family: poppins;
     position: fixed;
-    color: #fff;
+    /* color: #fffcfc; */
     width: 40vw;
 }
 
@@ -145,7 +146,7 @@ body {
 }
 
 .iland a {
-    color: #000;
+    color: #fff;
 }
 
 .header {
@@ -578,7 +579,6 @@ a {
     h1{
         font-size: 25px;
     }
-
     .iland {
         justify-content: space-around;
         color: #fff;
@@ -673,42 +673,48 @@ a {
 }
 /* Make other elements match light mode */
 .light-mode h1, 
-.light-mode p, 
 .light-mode .body,
 .light-mode .doing h4
 {
     /* background-color: rgba(135, 78, 13, 0.9); */
     color: black;
 }
+.light-mode p{
+    color: #000;
+}
 .light-mode .section{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(235, 206, 182);
 }
 .light-mode .section2{
-    background-color: rgb(248, 242, 235);
+    background-color: rgb(235, 206, 182);
 }
 .light-mode .doing{
-    background-color: rgb(248, 242, 235);
+    background-color: rgb(251, 227, 208);
 }
-.light-mode .footer,
-.light-mode .main
-{
-    background-color: rgb(248, 242, 235);
-}
+
 .light-mode #black{
     color: #000;
 }
 .light-mode #blue{
     color: blue;
 }
+.light-mode .iland a{
+    color: #000;
+}
+.light-mode .p1footer,
+.light-mode .p2footer{
+    color: #fff;
+}
+
 #theme-toggle{
-    padding: 15px;
+    padding: 10px;
     border-radius: 50px;
     border: none;
     box-shadow: 5px 3px 8px rgba(0.1, 0.1, 0.1, 0.5);
-    background-color: rgb(255, 191, 72);
+    /* background-color: rgb(255, 191, 72); */
 }
 
 #theme-toggle:hover{
-    background-color: rgb(229, 105, 22);
-    transform: scale(1.2);
+    /* background-color: rgb(229, 105, 22); */
+    transform: scale(1.1);
 }

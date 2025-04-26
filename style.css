@@ -133,7 +133,12 @@ body {
 .mona {
     display: flex;
     gap: 40px;
+    flex-direction: column;
     display: flex;
+    padding-left: 120px;
+    align-self: left;
+    justify-content: center;
+    width: 10vw;
 
 }
 
@@ -518,6 +523,8 @@ a{
     .mona{
         display: flex;
         align-self: center;
+        width: 35vw;
+        padding: 0;
         justify-self: center;
     }
     .pro{
@@ -605,8 +612,8 @@ a{
         flex-direction: column;
     }
     .mona{
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
+        display: flex;
+        flex-direction: column;
         align-self: center;
         justify-self: center;
     }

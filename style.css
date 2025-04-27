@@ -494,7 +494,8 @@ a{
     }
     .main{
         height: auto;
-        overflow: auto;
+        width: 100%;
+        overflow:visible;
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -586,7 +587,8 @@ a{
     }
     .main{
         height: auto;
-        overflow: auto;
+        width: 100%;
+        overflow:visible;
         align-items: center;
         display: flex;
         flex-direction: column;

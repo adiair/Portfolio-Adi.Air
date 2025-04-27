@@ -4,7 +4,7 @@
     padding: 0;
     scroll-behavior: smooth;
     margin: 0;
-    
+
 }
 
 
@@ -36,6 +36,10 @@ body {
     display: flex;
     justify-content: center;
     background-color: antiquewhite;
+}
+
+.d2header {
+    display: none;
 }
 
 .header .b1header {
@@ -103,10 +107,10 @@ body {
 }
 
 @keyframes fadeInLeft {
-to {
-    opacity: 1;
-    transform: translatex(0);
-}
+    to {
+        opacity: 1;
+        transform: translatex(0);
+    }
 }
 
 .ccp {
@@ -131,9 +135,11 @@ to {
     justify-content: center;
 
 }
-.Ids{
+
+.Ids {
     display: none;
 }
+
 .monabtn {
     color: rgb(0, 255, 81);
     cursor: pointer;
@@ -170,10 +176,10 @@ to {
 }
 
 @keyframes fadeInLeft {
-to {
-    opacity: 1;
-    transform: translateX(0);
-}
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .pf {
@@ -236,10 +242,10 @@ to {
 }
 
 @keyframes fadeInRight {
-to {
-    opacity: 1;
-    transform: translateX(0);
-}
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 #heading {
@@ -433,10 +439,10 @@ to {
 }
 
 @keyframes fadeInUp {
-to {
-    opacity: 1;
-    transform: translateY(0);
-}
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .btnmain {
@@ -507,10 +513,12 @@ a {
     color: #ffffff;
     outline: none;
 }
-#form3{
+
+#form3 {
     width: 93%;
 
 }
+
 .contact-form textarea {
     resize: none;
     width: 93%;
@@ -549,23 +557,29 @@ a {
     .input-row {
         flex-direction: column;
     }
-    .submit-btn{
+
+    .submit-btn {
         padding: 10px 20px;
         width: 190px;
 
     }
+
     .contact-section {
         padding: 50px 0 50px 0px;
     }
-    #form1{
+
+    #form1 {
         width: 80%;
     }
-    #form2{
+
+    #form2 {
         width: 80%;
     }
-    #form3{
+
+    #form3 {
         width: 80%;
     }
+
     .contact-form textarea {
         width: 80%;
     }
@@ -722,6 +736,44 @@ a {
         overflow-x: hidden;
     }
 
+    .d2header {
+        display: block;
+        display: flex;
+        justify-content: center;
+        /* background-color: antiquewhite; */
+    }
+    .header .b2header {
+        display: flex;
+        gap: 10px;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px 17px;
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 9999;
+        background: rgba(248, 242, 235, 0.3);
+        border: solid rgb(161, 160, 160);
+        border-radius: 50px;
+        font-family: poppins;
+        position: fixed;
+        width: 80vw;
+    }
+    
+    .iland {
+        justify-content: space-around;
+        color: #fff;
+        font-size: 17px;
+    }
+    
+    .iland a {
+        color: #fff;
+    }
+    
+    .header {
+        text-align: center;
+        padding: 10px;
+    }
+
     .d1header {
         display: none;
     }
@@ -790,10 +842,12 @@ a {
         align-self: flex-start;
         justify-self: center;
     }
-    .monabtn{
+
+    .monabtn {
         width: 90px;
     }
-    .Ids{
+
+    .Ids {
         display: none;
     }
 

@@ -518,17 +518,17 @@ a {
     }
     .submit-btn{
         padding: 10px 20px;
-        width: 190px;
+        width: 80%;
 
     }
     .contact-section {
         padding: 50px 0 50px 0px;
     }
     #form3{
-        width: 100%;
+        width: 80%;
     }
     .contact-form textarea {
-        width: 100%;
+        width: 80%;
     }
 }
 

@@ -512,7 +512,7 @@ a {
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .input-row {
         flex-direction: column;
     }
@@ -526,7 +526,6 @@ a {
     }
     #form3{
         width: 100%;
-    
     }
     .contact-form textarea {
         width: 100%;

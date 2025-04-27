@@ -837,16 +837,22 @@ a {
     }
 
     .mona {
-        display: grid;
-        flex-direction: column;
-        margin-left: 75px;
-        grid-template-columns: 1fr 1fr;
-        align-self: flex-start;
-        justify-self: center;
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+        justify-content: left;
+        height: 95px;
+        width: 70vw;
+        gap: 20px;
+        flex-wrap: wrap;
+        /* background-color: #5e3db8; */
     }
 
     .monabtn {
-        width: 90px;
+        width: 50px;
+        display: inline;
+        font-size: 14px;
+        padding: 10px;
     }
 
     .Ids {

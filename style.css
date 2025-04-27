@@ -804,8 +804,8 @@ a {
 
     .main {
         height: auto;
-        width: 100%;
-        overflow: visible;
+        width: 99%;
+        overflow-x: hidden;
         align-items: center;
         display: flex;
         flex-direction: column;

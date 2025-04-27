@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Moon+Dance&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Moon+Dance&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Moon+Dance&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Moon+Dance&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     padding: 0;
@@ -21,7 +18,7 @@ body {
     flex-direction: column;
 }
 
-#aboutLink{
+#aboutLink {
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
@@ -106,14 +103,10 @@ body {
 .one1 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
-    display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
+    justify-content: flex-start;
+    align-items: flex-start;
     text-align: left;
-    /* width: 400px; */
-    font-size: 20px;
 }
 
 .ccp {
@@ -132,22 +125,22 @@ body {
 
 .mona {
     display: flex;
-    gap: 40px;
-    flex-direction: column;
-    display: flex;
-    padding-left: 120px;
+    gap: 20px;
     align-self: left;
+    padding-left: 20px;
     justify-content: center;
-    width: 10vw;
 
 }
-
+.Ids{
+    display: none;
+}
 .monabtn {
     color: rgb(0, 255, 81);
     cursor: pointer;
     background-color: rgba(134, 129, 129, 0.33);
-    padding: 0px 20px;
     border: none;
+    padding: 10px 15px;
+    box-shadow: 2px 2px 2px rgba(238, 236, 236, 0.553);
     border-radius: 20px;
     cursor: pointer;
 }
@@ -244,6 +237,10 @@ body {
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
+.one {
+    background-color: rgba(142, 142, 142, 0.2);
+    border-radius: 25px;
+}
 
 
 .p1 {
@@ -342,9 +339,8 @@ body {
     font-size: 15px;
     position: relative;
     height: 130vh;
-    /* Viewport Height: makes it exactly 1 screen tall */
     overflow: hidden;
-    /* Prevents extra content from expanding it */
+    /* Viewport  expanding it */
     font-family: poppins;
 }
 
@@ -375,27 +371,30 @@ body {
     color: rgb(0, 255, 0);
     font-size: 28px;
     padding-bottom: 15px;
-    
+
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
     cursor: pointer;
 }
-.viewproject:hover{
-    transform:translateY(4px);
+
+.viewproject:hover {
+    transform: translateY(4px);
     /* transform: scale(1.1); */
 }
-.viewgithub{
+
+.viewgithub {
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
     cursor: pointer;
 }
-.viewgithub:hover{
-    transform:translateY(4px);
+
+.viewgithub:hover {
+    transform: translateY(4px);
     color: #a7a6a6;
 }
 
 .projects {
     display: flex;
     align-items: center;
-    
+
     justify-content: center;
 }
 
@@ -425,16 +424,113 @@ body {
     text-align: center;
     color: #fff;
 }
-.p1footer{
+
+.p1footer {
     font-size: 19px;
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0 5px 10px rgba(255, 255, 255, 0.8);
 
     padding: 25px;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
+/* Reset */
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/* Contact Section */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input Row */
+.input-row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Inputs and Textarea */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    font-family: poppins;
+    border: 2px solid #ff9100;
+    border-radius: 10px;
+    background-color: rgba(49, 165, 219, 0.3);
+    font-size: 16px;
+    color: #ffffff;
+    outline: none;
+}
+#form3{
+    width: 93%;
+
+}
+.contact-form textarea {
+    resize: none;
+    width: 93%;
+}
+
+/* Button */
+.submit-btn {
+    background-color: #7b4fe0;
+    color: #dadada;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    font-family: poppins;
+
+    width: 220px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #5e3db8;
+}
+
+/* Button Icon */
+.icon {
+    font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .input-row {
+        flex-direction: column;
+    }
+    .submit-btn{
+        padding: 10px 20px;
+        width: 190px;
+
+    }
+    #form3{
+        width: 100%;
+    
+    }
+    .contact-form textarea {
+        width: 100%;
+    }
+}
+
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::  */
 
@@ -473,178 +569,236 @@ a{
 
 @media (max-width: 868px) {
     /* Smaller screen adjustments for tablets and large phones */
-    
-    
+
+
     .header .b1header {
         width: 80vw;
         padding: 15px;
-        
+
     }
-    .p2{
+
+    .p2 {
         font-size: 16px;
     }
-    .h1{
+
+    .h1 {
         font-size: 50px;
     }
-    .iland{
+
+    .iland {
         font-size: 16px;
     }
-    .p1footer{
+
+    .p1footer {
         font-size: 17px;
     }
-    .main{
+
+    .main {
         height: auto;
         width: 100%;
-        overflow:visible;
+        overflow: visible;
         align-items: center;
         display: flex;
         flex-direction: column;
     }
-    .section{
+
+    .section {
         display: block;
         padding-bottom: 50px;
     }
-    #about{
+
+    #about {
         width: 90vw;
     }
-    #education{
+
+    #education {
         width: 90vw;
     }
-    #projects{
+
+    #projects {
         width: 90vw;
     }
-    #contacts{
+
+    #contacts {
         width: 82vw;
     }
-    .one1{
-        font-size:17px;
+
+    .one1 {
+        font-size: 17px;
         display: flex;
         flex-direction: column;
     }
-    .mona{
+
+    .mona {
         display: flex;
         align-self: center;
         width: 35vw;
         padding: 0;
         justify-self: center;
     }
-    .pro{
+
+    .pro {
         width: 80vw;
-        font-size:20px ;
+        font-size: 20px;
     }
-    .one{
+
+    .one {
         width: 58vw;
         font-size: 18px;
     }
-    .main .projectsbtn{
+
+    .main .projectsbtn {
         justify-content: center;
         display: flex;
         width: 80%;
         flex-direction: column;
     }
-    .btnmain{
+
+    .btnmain {
         display: flex;
         width: 73vw;
         flex-direction: column;
     }
-    .viewproject{
+
+    .viewproject {
         font-size: 26px;
     }
-    .section2{
+
+    .section2 {
         display: block;
-        
+
     }
-    .section4{
+
+    .section4 {
         display: block;
         padding-bottom: 350px;
     }
 }
 
 @media (max-width: 480px) {
+
     /* Very small screens like phones */
-    html{
+    html {
         display: flex;
         flex-direction: column;
     }
-    .d1header{
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .d1header {
         display: none;
     }
+
     .header .b1header {
         width: 80vw;
         padding: 15px;
     }
-    .p2{
+
+    .p2 {
         font-size: 16px;
     }
-    .h1{
+
+    .h1 {
         font-size: 47px;
     }
-    .iland{
+
+    .iland {
         font-size: 12px;
     }
-    .p1footer{
+
+    .p1footer {
         font-size: 15px;
     }
-    .main{
+
+    .one {
+        background-color: rgba(142, 142, 142, 0.2);
+        border-radius: 25px;
+    }
+
+    .main {
         height: auto;
         width: 100%;
-        overflow:visible;
+        overflow: visible;
         align-items: center;
         display: flex;
         flex-direction: column;
     }
-    .section{
+
+    .section {
         display: block;
     }
-    #about{
+
+    #about {
         width: 90vw;
     }
-    #education{
+
+    #education {
         width: 90vw;
     }
-    #projects{
+
+    #projects {
         width: 90vw;
     }
-    #contacts{
+
+    #contacts {
         width: 82vw;
     }
-    .one1{
+
+    .one1 {
         font-size: 15px;
         display: flex;
         flex-direction: column;
     }
-    .mona{
-        display: flex;
+
+    .mona {
+        display: grid;
         flex-direction: column;
-        align-self: center;
+        margin-left: 85px;
+        grid-template-columns: 1fr 1fr;
+        align-self: flex-start;
         justify-self: center;
     }
-    .pro{
-        width: 80vw;
-        font-size:16px ;
+    .monabtn{
+        width: 90px;
     }
-    .one{
+    .Ids{
+        display: none;
+    }
+
+    .pro {
+        width: 80vw;
+        font-size: 16px;
+    }
+
+    .one {
         width: 80vw;
         font-size: 15px;
     }
-    .main .projectsbtn{
+
+    .main .projectsbtn {
         justify-content: center;
         display: flex;
         width: 80%;
         flex-direction: column;
     }
-    .btnmain{
+
+    .btnmain {
         display: flex;
         width: 73vw;
         flex-direction: column;
     }
-    .viewproject{
+
+    .viewproject {
         font-size: 26px;
     }
-    .section2{
+
+    .section2 {
         display: block;
     }
-    .section4{
+
+    .section4 {
         display: block;
     }
 }

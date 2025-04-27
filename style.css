@@ -524,6 +524,12 @@ a {
     .contact-section {
         padding: 50px 0 50px 0px;
     }
+    #form1{
+        width: 80%;
+    }
+    #form2{
+        width: 80%;
+    }
     #form3{
         width: 80%;
     }

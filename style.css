@@ -729,6 +729,7 @@ a {
     /* Very small screens like phones */
     html {
         display: flex;
+        background-color: black;
         flex-direction: column;
         overflow-x: hidden;
     }

@@ -569,19 +569,19 @@ a {
     }
 
     #form1 {
-        width: 80%;
+        width: 84%;
     }
 
     #form2 {
-        width: 80%;
+        width: 84%;
     }
 
     #form3 {
-        width: 80%;
+        width: 84%;
     }
 
     .contact-form textarea {
-        width: 80%;
+        width: 84%;
     }
 }
 
@@ -839,7 +839,7 @@ a {
     .mona {
         display: grid;
         flex-direction: column;
-        margin-left: 85px;
+        margin-left: 75px;
         grid-template-columns: 1fr 1fr;
         align-self: flex-start;
         justify-self: center;
@@ -866,13 +866,13 @@ a {
     .main .projectsbtn {
         justify-content: center;
         display: flex;
-        width: 80%;
+        width: 95%;
         flex-direction: column;
     }
 
     .btnmain {
         display: flex;
-        width: 73vw;
+        width: 94%;
         flex-direction: column;
     }
 

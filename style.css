@@ -749,6 +749,7 @@ a {
         gap: 10px;
         justify-content: space-evenly;
         align-items: center;
+        margin-top: 15px;
         padding: 10px 17px;
         cursor: pointer;
         overflow: hidden;
@@ -817,18 +818,22 @@ a {
     }
 
     #about {
+        padding-top: 90px;
         width: 90vw;
     }
-
+    
     #education {
+        padding-top: 90px;
         width: 90vw;
     }
 
     #projects {
+        padding-top: 90px;
         width: 90vw;
     }
 
     #contacts {
+        padding-top: 90px;
         width: 82vw;
     }
 

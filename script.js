@@ -1,3 +1,18 @@
+window.addEventListener("load", function () {
+    const loadingText = document.getElementById("loading-text");
+
+    setTimeout(() => {
+        loadingText.textContent = "Initiating...";
+    }, 800);
+
+
+    setTimeout(() => {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+    }, 3000);
+});
+
+
 function showAbout() {
     document.getElementById("about").style.display = "block";
 }
@@ -34,7 +49,7 @@ function animateAbout() {
         contacts.style.display = "none";
         projects.style.display = "none";
         moved = true;
-    } 
+    }
     moved = !moved;
 }
 
@@ -53,7 +68,7 @@ function animateEducation() {
         contacts.style.display = "none";
         projects.style.display = "none";
         moved1 = true;
-    } 
+    }
     moved1 = !moved1;
 }
 

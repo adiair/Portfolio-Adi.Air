@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya Kokashe</title>
     <link rel="stylesheet" href="style.css">
-    <link type="image/png" sizes="32x32" rel="icon" href="images/icons8-crown-32 (2).png">
+    <link type="image/png" sizes="32x32" rel="icon" href="./images/icons8-crown-32 (2).png">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <script type="importmap">
         {
@@ -19,141 +19,155 @@
 </head>
 
 <body>
+    <!-- Loader -->
+    <div id="loader">
+        <div id="loading-text">Configuring...</div>
+    </div>
 
-    <header class="header">
-        <div class="d1header">
-            <div class="b1header">
-                <div class="iland">
-                    <a onclick="showAbout() , moveLeft() , animateAbout()" id="aboutLink">ABOUT</a>
-                </div>
-                <div class="iland">
-                    <a onclick="showEduction() , moveLeft() , animateEducation()" id="educationLink">EDUCATION</a>
-                </div>
-                <div class="iland">
-                    <a onclick="showProjects() , moveLeft() , animateProjects()" id="projectsLink">PROJECTS</a>
-                </div>
-                <div class="iland">
-                    <a onclick="showContacts() , moveLeft() , animateContacts()" id="contactsLink">CONTACT</a>
-                </div>
-                <!-- <button id="theme-toggle"><i class="uil uil-sun"></i></button> -->
-            </div>
-        </div>
-        <div class="d2header">
-            <div class="b2header">
-                <div class="iland">
-                    <a onclick="location.href='#about';">ABOUT</a>
-                </div>
-                <div class="iland">
-                    <a onclick="location.href='#education';">EDUCATION</a>
-                </div>
-                <div class="iland">
-                    <a onclick="location.href='#projects';">PROJECTS</a>
-                </div>
-                <div class="iland">
-                    <a onclick="location.href='#contacts';">CONTACTS</a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <main class="main">
-
-        <br>
-        <br>
-        <div class="section4" id="bio">
-            <div class="pf">
-                <p class="p2"><span style="color: rgb(0, 255, 255);"><span id="black">welcome</span></span><span
-                        style="color: rgb(255, 230, 0);"><span id="black">@portfolio</span></span><span
-                        style="color: rgb(255, 255, 255);"><span id="black">:~$</span></span> <span
-                        style="color: rgb(0, 255, 149);"><span id="black">whoami
-                            |</span></span>
-                </p>
-                <a id="name" onclick="location.href='';">
-                    <p class="h1">
-                        aditya kokashe
-                    </p>
-                </a>
-                <p class="p1">Full Stack Developer / Student</p>
-                <br>
-                <a class="p1" id="resumebtn" href="./images/ADITYA KOKASHE 2C.pdf">
-                    <p class="p1" id="resumebtn">RESUME</p>
-                </a>
-            </div>
-        </div>
-        <br>
-        
-        <div class="sahur">
-
-        </div>
-        <div class="section" id="about">
-            <p><span id="black" style="font-size: 25px; color: rgb(0, 255, 255);">Hey there! ✨</span></p>
-            <br>
-            <div class="proo">
-                <br>
-                <div class="pro">
-                    <p>Welcome to my multiverse — where innovation, ambition, and a little chaos forge the future.
-                        Just like Tony Stark engineering from a cave or Peter Parker balancing life and heroics, I’m on a journey to master the art of creation — from building dynamic web applications to conquering complex algorithms
-                        .</p>
-                    <br>
-                    <p>Every project is a new mission, every bug is a battle, and every line of code brings me closer to my own Endgame.
-                        In a world where technology evolves faster than a snap, I’m here — coding, learning, and assembling greatness.</p>
-                        <br>
-                    <p>Suit up — you're right where the adventure begins.🎮💻🚀🔥</p>
-                    <br>
-                    <p><span id="black" style="font-size: 25px; align-self: left; color: rgb(0, 255, 255); padding: 0 25px; border-radius: 40px; background-color: rgba(75, 75, 75, 0.7);">SKILLS</span></p>
-                    <br> 
-                    <div class="icon-slider">
-                        <div class="icon-track">
-                            <img src="https://skillicons.dev/icons?i=java" alt="">
-                            <img src="https://skillicons.dev/icons?i=javascript" alt="">
-                            <img src="https://skillicons.dev/icons?i=html" alt="">
-                            <img src="https://skillicons.dev/icons?i=css" alt="">
-                            <img src="https://skillicons.dev/icons?i=react" alt="">
-                            <img src="https://skillicons.dev/icons?i=vite" alt="">
-                            <img src="https://skillicons.dev/icons?i=npm" alt="">
-                            <img src="https://skillicons.dev/icons?i=nodejs" alt="">
-                            <img src="https://skillicons.dev/icons?i=cpp" alt="">
-                            <img src="https://skillicons.dev/icons?i=postgres" alt="">
-                            <img src="https://skillicons.dev/icons?i=github" alt="">
-                            <img src="https://skillicons.dev/icons?i=vscode" alt="">
-                            <img src="https://skillicons.dev/icons?i=figma" alt="">
-                            <img src="https://skillicons.dev/icons?i=mongodb" alt="">
-                            <img src="https://skillicons.dev/icons?i=git" alt="">
-                        </div>
+    <!-- Main Content (Hidden Initially) -->
+    <div id="main-content" style="display: none;">
+        <!-- Your actual portfolio content goes here -->
+        <header class="header">
+            <div class="d1header">
+                <div class="b1header">
+                    <div class="iland">
+                        <a onclick="showAbout() , moveLeft() , animateAbout()" id="aboutLink">ABOUT</a>
                     </div>
+                    <div class="iland">
+                        <a onclick="showEduction() , moveLeft() , animateEducation()" id="educationLink">EDUCATION</a>
+                    </div>
+                    <div class="iland">
+                        <a onclick="showProjects() , moveLeft() , animateProjects()" id="projectsLink">PROJECTS</a>
+                    </div>
+                    <div class="iland">
+                        <a onclick="showContacts() , moveLeft() , animateContacts()" id="contactsLink">CONTACT</a>
+                    </div>
+                    <!-- <button id="theme-toggle"><i class="uil uil-sun"></i></button> -->
+                </div>
+            </div>
+            <div class="d2header">
+                <div class="b2header">
+                    <div class="iland">
+                        <a onclick="location.href='#about';">ABOUT</a>
+                    </div>
+                    <div class="iland">
+                        <a onclick="location.href='#education';">EDUCATION</a>
+                    </div>
+                    <div class="iland">
+                        <a onclick="location.href='#projects';">PROJECTS</a>
+                    </div>
+                    <div class="iland">
+                        <a onclick="location.href='#contacts';">CONTACTS</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <main class="main">
+    
+            <br>
+            <br>
+            <div class="section4" id="bio">
+                <div class="pf">
+                    <p class="p2"><span style="color: rgb(0, 255, 255);"><span id="black">welcome</span></span><span
+                            style="color: rgb(255, 230, 0);"><span id="black">@portfolio</span></span><span
+                            style="color: rgb(255, 255, 255);"><span id="black">:~$</span></span> <span
+                            style="color: rgb(0, 255, 149);"><span id="black">whoami
+                                |</span></span>
+                    </p>
+                    <a id="name" onclick="location.href='';">
+                        <p class="h1">
+                            aditya kokashe
+                        </p>
+                    </a>
+                    <p class="p1">Full Stack Developer / Student</p>
                     <br>
-                    <ul
-                        style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; align-items: center;">
-                        <li>JAVA</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>C++</li>
-                        <li>React</li>
-                        <li>Taiwlind.css</li>
-                        <li>MongoDB</li>
-                        <li>Git</li>
-                        <li>Figma</li>
-                        <li>Postgres</li>
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                        <li>Three.js</li>
-                        <li>MySQL</li>
-                    </ul>
+                    <a class="p1" id="resumebtn" href="./images/ADITYA KOKASHE 2C.pdf">
+                        <p class="p1" id="resumebtn">RESUME</p>
+                    </a>
                 </div>
             </div>
             <br>
-        </div>
-        
-        <div class="section" id="education">
-            <p><span id="black" style="font-size: 25px; color: rgb(0, 255, 255);">A brief about my life in college.</span></p>
-            <br>
-            <div id="resume">
-                <div>
+    
+            <div class="sahur">
+    
+            </div>
+            <div class="section" id="about">
+                <p><span id="black" style="font-size: 25px; color: rgb(0, 255, 255);">Hey there! ✨</span></p>
+                <br>
+                <div class="proo">
+                    <br>
+                    <div class="pro">
+                        <p>Welcome to my multiverse — where innovation, ambition, and a little chaos forge the future.
+                            Just like Tony Stark engineering from a cave or Peter Parker balancing life and heroics, I’m on
+                            a journey to master the art of creation — from building dynamic web applications to conquering
+                            complex algorithms
+                            .</p>
+                        <br>
+                        <p>Every project is a new mission, every bug is a battle, and every line of code brings me closer to
+                            my own Endgame.
+                            In a world where technology evolves faster than a snap, I’m here — coding, learning, and
+                            assembling greatness.</p>
+                        <br>
+                        <p>Suit up — you're right where the adventure begins.🎮💻🚀🔥</p>
+                        <br>
+                        <p><span id="black"
+                                style="font-size: 25px; align-self: left; color: rgb(0, 255, 255); padding: 0 25px; border-radius: 40px; background-color: rgba(75, 75, 75, 0.7);">SKILLS</span>
+                        </p>
+                        <br>
+                        <div class="icon-slider">
+                            <div class="icon-track">
+                                <img src="https://skillicons.dev/icons?i=java" alt="">
+                                <img src="https://skillicons.dev/icons?i=javascript" alt="">
+                                <img src="https://skillicons.dev/icons?i=html" alt="">
+                                <img src="https://skillicons.dev/icons?i=css" alt="">
+                                <img src="https://skillicons.dev/icons?i=react" alt="">
+                                <img src="https://skillicons.dev/icons?i=vite" alt="">
+                                <img src="https://skillicons.dev/icons?i=npm" alt="">
+                                <img src="https://skillicons.dev/icons?i=nodejs" alt="">
+                                <img src="https://skillicons.dev/icons?i=cpp" alt="">
+                                <img src="https://skillicons.dev/icons?i=postgres" alt="">
+                                <img src="https://skillicons.dev/icons?i=github" alt="">
+                                <img src="https://skillicons.dev/icons?i=vscode" alt="">
+                                <img src="https://skillicons.dev/icons?i=figma" alt="">
+                                <img src="https://skillicons.dev/icons?i=mongodb" alt="">
+                                <img src="https://skillicons.dev/icons?i=git" alt="">
+                            </div>
+                        </div>
+                        <br>
+                        <ul
+                            style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; align-items: center;">
+                            <li>JAVA</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>C++</li>
+                            <li>React</li>
+                            <li>Taiwlind.css</li>
+                            <li>MongoDB</li>
+                            <li>Git</li>
+                            <li>Figma</li>
+                            <li>Postgres</li>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>Three.js</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="box1">
-                    <div class="one">
-                        <p style="font-size:22px">Bachelor Of Technology |
+                <br>
+            </div>
+    
+            <div class="section" id="education">
+                <p><span id="black" style="font-size: 25px; color: rgb(0, 255, 255);">A brief about my life in
+                        college.</span></p>
+                <br>
+                <div id="resume">
+                    <div>
+                    </div>
+                    <div class="box1">
+                        <div class="one">
+                            <p style="font-size:22px">Bachelor Of Technology |
                                 Computer Science</p>
                             <br>
                             <hr>
@@ -164,206 +178,215 @@
                             <br>
                             <span style="color: yellow;"><span id="blue"> SGPA - 8.92 <span id="black">|</span>
                                     CGPA - 8.56 </span></span>
-                        </p>
-                    </div>
-                    <br>
-
-                    <div class="one">
-                        <p style="font-size: 22px;">Microsoft certified in Azure Fundamentals
-                            <br>
-                            <hr>
-                            <!-- <span id="black">Microsoft certified in Azure Fundamentals</span> -->
-
-                            
-                            <span style="color: rgb(176, 174, 174);">2025</span>
-                            <br>
-                            <a style="color: yellow;" href="./images/Cretificate AZ900.pdf"><span id="blue">View
-                                    Certificate</span><span id="black"> |</span></a>
-
-                            <a style="color: yellow;" href="https://bit.ly/3Xvi20J"><span id="blue">View
-                                    Badge</span></a>
-                        </p>
-                    </div>
-                    <br>
-
-                    <div class="one">
-                        <p style="font-size: 22px;">Google Cloud | SkillUp
-                            <br>
-                            <hr><span id="black">Introduction to Generative AI Studio</span>
-
-                            <br>
-                            <a style="color: yellow;" href="./images/Google generative AI.pdf"><span id="blue">View
-                                    Certificate</span></a>
-                        </p>
-                    </div>
-                    <!-- <div class="one">
-                            <p> <b>Senior Secondary</b> | <b>2021</b>
-                                <br>
-                                <hr>
-                                Jawahar Navodaya Vidyalaya -Betul
-                                <br>
-                                Percentage: 83.4%
                             </p>
                         </div>
                         <br>
+    
                         <div class="one">
-                            <p> <b>High School</b> | <b>2019</b>
+                            <p style="font-size: 22px;">Microsoft certified in Azure Fundamentals
                                 <br>
                                 <hr>
-                                Jawahar Navodaya Vidyalaya -Betul
+                                <!-- <span id="black">Microsoft certified in Azure Fundamentals</span> -->
+    
+    
+                                <span style="color: rgb(176, 174, 174);">2025</span>
                                 <br>
-                                Percentage: 87.4%
+                                <a style="color: yellow;" href="./images/Cretificate AZ900.pdf"><span id="blue">View
+                                        Certificate</span><span id="black"> |</span></a>
+    
+                                <a style="color: yellow;" href="https://bit.ly/3Xvi20J"><span id="blue">View
+                                        Badge</span></a>
                             </p>
-                        </div> -->
+                        </div>
+                        <br>
+    
+                        <div class="one">
+                            <p style="font-size: 22px;">Google Cloud | SkillUp
+                                <br>
+                                <hr><span id="black">Introduction to Generative AI Studio</span>
+    
+                                <br>
+                                <a style="color: yellow;" href="./images/Google generative AI.pdf"><span id="blue">View
+                                        Certificate</span></a>
+                            </p>
+                        </div>
+                        <!-- <div class="one">
+                                <p> <b>Senior Secondary</b> | <b>2021</b>
+                                    <br>
+                                    <hr>
+                                    Jawahar Navodaya Vidyalaya -Betul
+                                    <br>
+                                    Percentage: 83.4%
+                                </p>
+                            </div>
+                            <br>
+                            <div class="one">
+                                <p> <b>High School</b> | <b>2019</b>
+                                    <br>
+                                    <hr>
+                                    Jawahar Navodaya Vidyalaya -Betul
+                                    <br>
+                                    Percentage: 87.4%
+                                </p>
+                            </div> -->
+                    </div>
                 </div>
             </div>
-        </div>
-
-
-        <br>
-        <div class="section" id="projects">
-            <p><span id="black" style="font-size: 25px;  color: rgb(0, 255, 255);;">🔭 Projects I have worked on.</span></p>
+    
+    
             <br>
-            <div class="projects">
-                <div class="projectsbtn">
-                    <div id="mainb1" class="btnmain">
-                        <p class="viewproject" onclick="location.href='https://marveldictionary.netlify.app/';">>_Marvel
-                            Dictionary</p>
-                        <li style="padding-bottom: 5px;">A Marvel API dictionary providing details on Marvel
-                            characters.</li>
-                        <li style="padding-bottom: 5px;">HTML, CSS,  Marvel API, JavaScript</li>
-                        <li style="padding-bottom: 5px;">2024</li>
-                        <li class="viewgithub" onclick="location.href='';" style="padding-bottom: 5px;">Git Repository</li>
-                    </div>
-                    <div id="mainb2" class="btnmain">
-                        <p class="viewproject" onclick="location.href='https://miniopera.netlify.app/';">>_MiniOpera</p>
-                        <li style="padding-bottom: 5px;">Multiplayer Tic-Tac-Toe game.</li>
-                        <li style="padding-bottom: 5px;">React, Javascript</li>
-                        <li style="padding-bottom: 5px;">2024</li>
-                        <li class="viewgithub" onclick="location.href='';"  style="padding-bottom: 5px;">Git Repository</>
-                    </div>
-                    <div id="mainb6" class="btnmain">
-                        <p class="viewproject" onclick="location.href='';">>_WellCare</p>
-                        <li style="padding-bottom: 5px;">A portal for patients to book appointments with doctors.</li>
-                        <li style="padding-bottom: 5px;">MERN stack</li>
-                        <li style="padding-bottom: 5px;">2025</li>
-                        <li class="viewgithub" onclick="location.href='';"  style="padding-bottom: 5px;">Git Repository</>
-                    </div>
-                    <div id="mainb3" class="btnmain">
-                        <p class="viewproject" onclick="location.href='https://crackitnow.netlify.app/';">>_CrackItNow
-                        </p>
-                        <li style="padding-bottom: 5px;">A question-answer bank for company interviews.</li>
-                        <li style="padding-bottom: 5px;">HTML, CSS, React, JavaScript</li>
-                        <li style="padding-bottom: 5px;">2025</li>
-                        <li class="viewgithub" onclick="location.href='';"  style="padding-bottom: 5px;">Git Repository</li>
-                    </div>
-                    <div id="mainb4" class="btnmain">
-                        <p class="viewproject" onclick="location.href='';">>_Resume Maker</p>
-                        <li style="padding-bottom: 5px;">A resume making web app.</li>
-                        <li style="padding-bottom: 5px;">React, Javascript</li>
-                        <li style="padding-bottom: 5px;">2025</li>
-                        <li class="viewgithub" onclick="location.href='';"  style="padding-bottom: 5px;">Git Repository</>
+            <div class="section" id="projects">
+                <p><span id="black" style="font-size: 25px;  color: rgb(0, 255, 255);;">🔭 Projects I have worked on.</span>
+                </p>
+                <br>
+                <div class="projects">
+                    <div class="projectsbtn">
+                        <div id="mainb1" class="btnmain">
+                            <p class="viewproject" onclick="location.href='https://marveldictionary.netlify.app/';">>_Marvel
+                                Dictionary</p>
+                            <li style="padding-bottom: 5px;">A Marvel API dictionary providing details on Marvel
+                                characters.</li>
+                            <li style="padding-bottom: 5px;">HTML, CSS, Marvel API, JavaScript</li>
+                            <li style="padding-bottom: 5px;">2024</li>
+                            <li class="viewgithub" onclick="location.href='';" style="padding-bottom: 5px;">Git Repository
+                            </li>
                         </div>
-                    <div id="mainb5" class="btnmain">
-                        <p class="viewproject" onclick="location.href='';">>_Worst Light Switches</p>
-                        <li style="padding-bottom: 5px;">A React app to help users find the funny light switches.</li>
-                        <li style="padding-bottom: 5px;">React, Javascript</li>
-                        <li style="padding-bottom: 5px;">2025</li>
-                        <li class="viewgithub" onclick="location.href='';"  style="padding-bottom: 5px;">Git Repository</li>
+                        <div id="mainb2" class="btnmain">
+                            <p class="viewproject" onclick="location.href='https://miniopera.netlify.app/';">>_MiniOpera</p>
+                            <li style="padding-bottom: 5px;">Multiplayer Tic-Tac-Toe game.</li>
+                            <li style="padding-bottom: 5px;">React, Javascript</li>
+                            <li style="padding-bottom: 5px;">2024</li>
+                            <li class="viewgithub" onclick="location.href='';" style="padding-bottom: 5px;">Git Repository
+                                </>
+                        </div>
+                        <div id="mainb6" class="btnmain">
+                            <p class="viewproject" onclick="location.href='';">>_WellCare</p>
+                            <li style="padding-bottom: 5px;">A portal for patients to book appointments with doctors.</li>
+                            <li style="padding-bottom: 5px;">MERN stack</li>
+                            <li style="padding-bottom: 5px;">2025</li>
+                            <li class="viewgithub" onclick="location.href='';" style="padding-bottom: 5px;">Git Repository
+                                </>
+                        </div>
+                        <div id="mainb3" class="btnmain">
+                            <p class="viewproject" onclick="location.href='https://crackitnow.netlify.app/';">>_CrackItNow
+                            </p>
+                            <li style="padding-bottom: 5px;">A question-answer bank for company interviews.</li>
+                            <li style="padding-bottom: 5px;">HTML, CSS, React, JavaScript</li>
+                            <li style="padding-bottom: 5px;">2025</li>
+                            <li class="viewgithub" onclick="location.href='';" style="padding-bottom: 5px;">Git Repository
+                            </li>
+                        </div>
+                        <div id="mainb4" class="btnmain">
+                            <p class="viewproject" onclick="location.href='';">>_Resume Maker</p>
+                            <li style="padding-bottom: 5px;">A resume making web app.</li>
+                            <li style="padding-bottom: 5px;">React, Javascript</li>
+                            <li style="padding-bottom: 5px;">2025</li>
+                            <li class="viewgithub" onclick="location.href='';" style="padding-bottom: 5px;">Git Repository
+                                </>
+                        </div>
+                        <div id="mainb5" class="btnmain">
+                            <p class="viewproject" onclick="location.href='';">>_Worst Light Switches</p>
+                            <li style="padding-bottom: 5px;">A React app to help users find the funny light switches.</li>
+                            <li style="padding-bottom: 5px;">React, Javascript</li>
+                            <li style="padding-bottom: 5px;">2025</li>
+                            <li class="viewgithub" onclick="location.href='';" style="padding-bottom: 5px;">Git Repository
+                            </li>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <br>
-        <br>
-        <div class="section2" id="contacts">
-            <p><span id="black" style="font-size: 25px; color: rgb(0, 255, 255);">If you liked my portfolio, Lets Connect 🚀</span>
-            </p>
-            
-
-            <div class="box3">
-                <div class="one1">
-                    <!-- <div id="ct">
-                        <div class="ccp">
-                            <img src="https://anshulwadhwa.me/assets/images/icon-app.svg" id="cticon" alt="">
+            <br>
+            <br>
+            <div class="section2" id="contacts">
+                <p><span id="black" style="font-size: 25px; color: rgb(0, 255, 255);">If you liked my portfolio, Lets
+                        Connect 🚀</span>
+                </p>
+    
+    
+                <div class="box3">
+                    <div class="one1">
+                        <!-- <div id="ct">
+                            <div class="ccp">
+                                <img src="https://anshulwadhwa.me/assets/images/icon-app.svg" id="cticon" alt="">
+                            </div>
+                            <div class="ccp2">
+                                <p><span style="color: rgb(251, 255, 0);"><span id="black">Email:</span></span></p>
+                                <a href="mailto:adi310kokashe@gmail.com">
+                                    <p>adi310kokashe@gmail.com</p>
+                                </a>
+                            </div>
                         </div>
-                        <div class="ccp2">
-                            <p><span style="color: rgb(251, 255, 0);"><span id="black">Email:</span></span></p>
-                            <a href="mailto:adi310kokashe@gmail.com">
-                                <p>adi310kokashe@gmail.com</p>
-                            </a>
+                        <div id="ct2">
+                            <div class="ccp">
+                                <img src="https://anshulwadhwa.me/assets/images/icon-app.svg" id="cticon" alt="">
+                            </div>
+                            <div class="ccp2"> -->
+                        <!-- <p><span style="color: rgb(251, 255, 0);"><span id="black">Phone:</span></span></p>
+                                <a href="tel:+918827901199">
+                                    <p style="width:200px">+91 8827901199</p>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div id="ct2">
-                        <div class="ccp">
-                            <img src="https://anshulwadhwa.me/assets/images/icon-app.svg" id="cticon" alt="">
-                        </div>
-                        <div class="ccp2"> -->
-                            <!-- <p><span style="color: rgb(251, 255, 0);"><span id="black">Phone:</span></span></p>
-                            <a href="tel:+918827901199">
-                                <p style="width:200px">+91 8827901199</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div id="ct3">
-                        <div class="ccp">
-                            <img src="https://anshulwadhwa.me/assets/images/icon-app.svg" id="cticon" alt="">
-                        </div>
-                        <div class="ccp2">
-                            <p><span style="color: rgb(251, 255, 0);"><span id="black">Location:</span></span></p>
-                            <p>Bhopal, Madhya Pradesh</p>
-                        </div>
-                        
-                    </div> -->
-                
-                    <section class="contact-section">
-                        <form class="contact-form">
-                          <div class="input-row">
-                            <input type="text" id="form1" name="name" placeholder="Name" required>
-                            <input type="email" id="form2" name="email" placeholder="Email" required>
-                          </div>
-                          <input type="text" id="form3" name="subject" placeholder="Subject" required>
-                          <textarea name="message" placeholder="Message" rows="6" required></textarea>
-                          <button type="submit" class="submit-btn">
-                            Send Message 
-                            <span class="icon">➤</span>
-                          </button>
-                        </form>
-                    </section>
-
-                    <div class="mona">
-                        <p class="monabtn" onclick="location.href='https://www.linkedin.com/in/adityakokashe/';">LinkedIn
+                        <div id="ct3">
+                            <div class="ccp">
+                                <img src="https://anshulwadhwa.me/assets/images/icon-app.svg" id="cticon" alt="">
+                            </div>
+                            <div class="ccp2">
+                                <p><span style="color: rgb(251, 255, 0);"><span id="black">Location:</span></span></p>
+                                <p>Bhopal, Madhya Pradesh</p>
+                            </div>
+                            
+                        </div> -->
+    
+                        <section class="contact-section">
+                            <form class="contact-form">
+                                <div class="input-row">
+                                    <input type="text" id="form1" name="name" placeholder="Name" required>
+                                    <input type="email" id="form2" name="email" placeholder="Email" required>
+                                </div>
+                                <input type="text" id="form3" name="subject" placeholder="Subject" required>
+                                <textarea name="message" placeholder="Message" rows="6" required></textarea>
+                                <button type="submit" class="submit-btn">
+                                    Send Message
+                                    <span class="icon">➤</span>
+                                </button>
+                            </form>
+                        </section>
+    
+                        <div class="mona">
+                            <p class="monabtn" onclick="location.href='https://www.linkedin.com/in/adityakokashe/';">
+                                LinkedIn
                             <p class="Ids"> adityakokashe</p>
-                        </p>
-                        <p class="monabtn" onclick="location.href='https://github.com/imperio07adi';">GitHub
+                            </p>
+                            <p class="monabtn" onclick="location.href='https://github.com/imperio07adi';">GitHub
                             <p class="Ids"> imperio07adi</p>
-                        </p>
-                        <p class="monabtn" onclick="location.href='https://x.com/adityakokashe';">Twitter
-                            <p class="Ids"> adityakokashe</p> 
-                        </p>
-                        <p class="monabtn" onclick="location.href='mailto:adi310kokashe@gmail.com';">HireMe
-                            <p class="Ids"> adityakokashe</p> 
-                        </p>
-                        
-                        <!-- <a href="mailto:adi310kokashe@gmail.com"><p class="monabtn">HireMe</p></a>        -->
+                            </p>
+                            <p class="monabtn" onclick="location.href='https://x.com/adityakokashe';">Twitter
+                            <p class="Ids"> adityakokashe</p>
+                            </p>
+                            <p class="monabtn" onclick="location.href='mailto:adi310kokashe@gmail.com';">HireMe
+                            <p class="Ids"> adityakokashe</p>
+                            </p>
+    
+                            <!-- <a href="mailto:adi310kokashe@gmail.com"><p class="monabtn">HireMe</p></a>        -->
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <br>
-    </main>
-    <footer class="footer">
-        <div class="d1footer">
-
-            <p class="p1footer">Hi! I'm Aditya. This is where I make stuff
-                on the web
-                    <3 
-                
-            </p>
-        </div>
-    </footer>
+    
+    
+            <br>
+        </main>
+        <footer class="footer">
+            <div class="d1footer">
+    
+                <p class="p1footer">Hi! I'm Aditya. This is where I make stuff
+                    on the web
+                    <3 </p>
+            </div>
+        </footer>
+    </div>
+    
 
     <script type="module" src="main.js"></script>
     <script src="script.js"></script>

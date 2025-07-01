@@ -759,29 +759,7 @@ a {
         overflow-x: hidden;
     }
 
-    .d2header {
-        display: block;
-        display: flex;
-        justify-content: center;
-        /* background-color: antiquewhite; */
-    }
-    .header .b2header {
-        display: flex;
-        gap: 10px;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-top: 15px;
-        padding: 10px 17px;
-        cursor: pointer;
-        overflow: hidden;
-        z-index: 9999;
-        background: rgba(248, 242, 235, 0.3);
-        border: solid rgb(161, 160, 160);
-        border-radius: 50px;
-        font-family: poppins;
-        position: fixed;
-        width: 80vw;
-    }
+    
     
     .iland {
         justify-content: space-around;

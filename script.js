@@ -2,7 +2,6 @@ window.addEventListener("load", function () {
     const loadingText = document.getElementById("loading-text");
 
 
-
     setTimeout(() => {
         document.getElementById("loader").style.display = "none";
         document.getElementById("main-content").style.display = "block";

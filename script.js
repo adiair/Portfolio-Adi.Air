@@ -1,9 +1,6 @@
 window.addEventListener("load", function () {
     const loadingText = document.getElementById("loading-text");
 
-    setTimeout(() => {
-        loadingText.textContent = "Initiating...";
-    }, 800);
 
 
     setTimeout(() => {

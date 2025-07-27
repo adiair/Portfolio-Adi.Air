@@ -469,11 +469,11 @@ body {
 .btnmain {
     text-align: left;
     display: flex;
-    font-size: 13px;
+    font-size: 15px;
     background-color: rgba(134, 129, 129, 0.23);
     width: 21vw;
     border-radius: 20px;
-    padding: 8px;
+    padding: 5px;
     flex-direction: column;
 }
 
